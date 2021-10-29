@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+   <div class='section'>
+       <div class='section1' id='section1'>
+        <p id='p1'>
+          
+          <h1> <span class ='black '><br><br>welcome  to hotel bookings</span></h1>
+        </p>
+        <br><br>
+        <h1 id='p3'>Looking for hotes? Download the app or <br> Register now !</h1><br><br>
+        <button type="button" class="button"  onclick="handleClick_download()">Click to download</button>
+
+        <!--SIGN UP In FORM -->
+        <button type="button" class="open-button"  onclick="handleClick_Signup()">  Sign up</button>
+
+        <div class="form-popup" id="mySignupForm">
+          <form action="" class="form-container">
+            <h1>Sign up</h1>
+            <label for="First name"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First name" name="Name" required>
+
+            <label for="Last name"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last name" name="Last name" required>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm_signup()">Close</button>
+          </form>
+        </div>
+        
+        <!--LOG In FORM -->
+        <button type="button" class="open-button"  onclick="handleClick_Login()">  Log in</button>
+
+
+        <div class="form-popup" id="myForm">
+          <form action="" class="form-container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        
+        <!-- <button onclick="handleClick()">Click me</button>-->
+       </div>
+      
+
+   </div>
+   <div class='feature-section'>
+      <div class='feature-section-01' id='f-section-01'>
+        <h2 id='day' ><span class ='feature-section-h2' >Looking for Pricing?<br> calculate pricing now !</span></h2><br>
+        <button type="button" class="button"  onclick="handleClick_input_days()"> Enter days you want to stay</button>
+      </div>
+      <div class='feature-section-02' id='f-section-02'>
+        <h2 ><span class ='feature-section-h2' >Brows best<br> hotels....</span></h2><br>
+        <button type="button" class="button"  onclick="handleClick_brows_galary()"> See galary </button>
+      </div>
+      <div class='feature-section-03' id='f-section-03'>
+        <h2 ><span class ='feature-section-h2' >Book Hotels<br>Now....</span></h2><br>
+        <button type="button" class="button"  onclick="handleClick_brows_book()"> Book Hotels </button>
+      </div>
+   </div>
+
+
+  <div class="footer">
+    <div class="address">
+      <p><h2>House: 1213</h2></p>
+      <p><h2>Road:5</h2></p>
+      <p><h2>Banasree, Rampura,Dhaka</h2></p>
+
+    </div>
+    
+    <div class="partners">
+      <p><h2>Our partners : </h2></p>
+      <p><h3>BRAC</h3></p>
+      <p><h3>BKASH limited</h3></p>
+    </div>
+    <div class="subscribe">
+      <input type="text" class="input" placeholder="Write Something" />
+      <button type="button" class="button-subscribe">Subscribe Now</button>
+    </div>
+  </div>
+
+
+    <!-- <button onclick="handleClick()">
+        Click
+    </button> -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

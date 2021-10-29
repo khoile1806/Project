@@ -1,0 +1,260 @@
+.header{
+    background-color: rgb(239, 239, 243);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-right: 0cm;
+
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+  display: grid;
+  grid-template-columns: auto  ;
+  background-image: url("images/gb-3.jpg");
+  background-size: 1900px;
+  height: 950px;
+}
+
+.section1{
+    border: 2px ; 
+    padding:50px;
+    background-color:rgb(255, 254, 255);
+    opacity: 0.8;
+    text-align: center;
+    
+    
+}
+
+
+
+/*.section3{
+    border: 2px ;
+    padding:50px;
+    text-align: right;
+    background-color:rgb(255, 254, 255);
+    
+    opacity: 0.8;
+    
+}*/
+
+.feature-section{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  background-image:url("images/gb-3.jpg"); ;
+  
+  
+}
+.feature-section-01{
+    border: 15px ;
+    padding:50px;
+    height: 350px;
+    
+    opacity: 0.8;
+    background-color:rgb(247, 247, 248);
+    
+    
+}
+
+.feature-section-h2{
+    font-size: 40px;
+    text-align: justify;
+    
+}
+
+
+.feature-section-02{
+    border: 2px ;
+    padding:50px;
+    height: 350px;
+    
+    opacity: 0.8;
+    background-color:rgb(247, 247, 248);
+    
+}
+.feature-section-03{
+    border: 20px ;
+    height: 350px;
+    padding:50px;
+    opacity: 0.8;
+    background-color:rgb(247, 247, 248);
+    
+}
+
+
+p{
+    text-align:justify;
+    
+}
+
+.button {
+    background-color: #332633;
+    border: none;
+    border-radius: 5cm;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 1;
+    align-items:flex-start;
+}
+
+p1{
+    font-size: 50px;
+}
+
+/* Text coloring span*/
+.red{
+    font-size: 50px;
+    color: red;
+    opacity: 1;
+}
+.black{
+    font-size: 50px;
+    color: black;
+}
+
+
+.open-button {
+    background-color: #332633;
+    border: none;
+    border-radius: 5cm;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 1;
+    align-items:flex-start;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: black;
+  }
+  
+  /* Add styles to the form container */
+.form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+  
+  /* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    background: #f1f1f1;
+}
+  
+  /* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    padding-bottom: 5px;
+}
+  
+  /* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #0446aa;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+
+.form-container .cancel {
+    background-color: rgb(107, 149, 240);
+}
+  
+  /* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background-color:rgb(64, 66, 66);
+    height:400px;
+    margin:0;
+    opacity: 0.8;
+}
+
+.address{
+    margin-top:60px;
+    text-align: center;
+    color: white;
+
+    
+}
+
+.partners{
+    
+    margin-top:60px;
+    text-align: center;
+    color: white;
+
+}
+
+.social a{
+    color: white;
+    position: relative;
+    top:100px;
+    text-decoration: none;
+
+}
+.subscribe{
+    margin-top:auto;
+    margin-bottom:20px;
+}
+.input{
+    width: 400px;
+    height:30px;
+    border-radius: 10px;
+    border: 2px solid rgb(137, 137, 243);
+}
+.button-subscribe{
+    height: 40px;
+    width:200px;
+    background-color: rgb(140, 140, 240);
+    color: white;
+    border-radius: 10px;
+    font-size:20px;
+    cursor: pointer;
+    transition: 3s;
+}
+.button-subscribe:hover{
+    background-color:transparent;
+    box-shadow: 1px 1px 5px grey;
+    transform: rotate(360deg)
+}

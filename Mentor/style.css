@@ -1,0 +1,138 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --headings-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+html {
+  background-color: var(--violet);
+}
+body {
+  background: url("./images/bg-desktop.svg");
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--body-font);
+}
+.main-container {
+  position: relative;
+  width: 90vw;
+  min-height: 88vh;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+#logo {
+  width: 10rem;
+  margin-bottom: 4rem;
+}
+.mockup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.mockup-container img {
+  max-width: 57%;
+  margin-right: 3vw;
+  object-fit: contain;
+}
+.mockup-text {
+  width: calc(43% - 3vw);
+  padding-top: 2rem;
+}
+.mockup-text h1 {
+  font-family: var(--headings-font);
+  color: white;
+  font-weight: 600;
+}
+.mockup-text p {
+  color: hsl(255, 44%, 86%);
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+.mockup-text button {
+  margin-top: 1rem;
+  padding: 0.8rem 4rem;
+  border-radius: 2.5rem;
+  border: none;
+  box-shadow: 1px 1px 10px hsl(254, 60%, 30%);
+  color: var(--violet);
+  font-weight: 400;
+}
+.social-link {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.social-link i {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2.1rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.social-link i:hover {
+  color: hsl(255, 44%, 86%);
+  border-color: hsl(255, 44%, 86%);
+}
+.attribution {
+  color: white;
+}
+.attribution a {
+  color: hsl(255, 44%, 86%);
+}
+.attribution a:hover {
+  color: hsl(254, 58%, 80%);
+}
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    background: url("./images/bg-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #logo {
+    margin-bottom: 3rem;
+  }
+  .mockup-container img {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .mockup-text {
+    text-align: center;
+    width: 100%;
+  }
+  .mockup-text h1 {
+    font-size: 1.8rem;
+  }
+  .mockup-text button {
+    padding: 1rem 5rem;
+  }
+  .social-link {
+    position: unset;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 983px) {
+  html {
+    font-size: 15px;
+  }
+  .mockup-text h1 {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  .mockup-container {
+    margin-top: 2.5rem;
+  }
+  .mockup-text {
+    padding-top: 0;
+  }
+}
