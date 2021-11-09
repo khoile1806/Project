@@ -105,7 +105,7 @@
     display: block;
 }
 
-/* header notufication */
+/* header notification */
 
 .header__notify{
     position: absolute;
@@ -116,8 +116,28 @@
     border: 1px solid #D3D3D3;
     cursor: default;
     transform-origin: 90% top;
-    animation: headerNotify ease-in 0.3s;
+    animation: headerNotify ease-in 0 /* tối ưu chuyển động */
     display: none;
+}
+
+.header__notify::before{
+    content: "";
+    border-width: 20px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 12px;
+    top: -30px;
+}
+
+.header__notify::after{
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 12px;
+    width: 90px;
+    height: -20px;
 }
 
 @keyframes headerNotify{
@@ -204,4 +224,31 @@
     color: var(--text-color);
     font-weight: 400;
     font-weight: 1.4rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;  
+    display: flex;
+    z-index: 2;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__body{
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
 }
