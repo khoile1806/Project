@@ -116,7 +116,7 @@
     border: 1px solid #D3D3D3;
     cursor: default;
     transform-origin: 90% top;
-    animation: headerNotify ease-in 0 /* tối ưu chuyển động */
+    animation: headerNotify ease-in 0; /* tối ưu chuyển động */
     display: none;
 }
 
