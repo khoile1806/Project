@@ -1,0 +1,18 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\kiemtracuoiky"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Wed Project",
+    "files.associations": {
+      "cmath": "cpp",
+      "iostream": "cpp",
+      "ostream": "cpp"
+    }
+  }
+}
